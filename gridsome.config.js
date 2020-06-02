@@ -7,8 +7,13 @@
 module.exports = {
   siteName: 'Character Store',
   plugins: [
-      {
-          use: 'gridsome-plugin-netlify-cms'
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/characters/**/*.md',
+        typeName: 'Character',
+        route: '/character/:name'
       }
+    }
   ]
 }
