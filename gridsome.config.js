@@ -10,7 +10,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: './contents/characters',
+        baseDir: '/.netlify/git/github/contents/characters',
         path: '**/*.md',
         typeName: 'Character',
         route: '/character/:name'
