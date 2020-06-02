@@ -6,5 +6,9 @@
 
 module.exports = {
   siteName: 'Character Store',
-  plugins: []
+  plugins: [
+      {
+          use: 'gridsome-plugin-netlify-cms'
+      }
+  ]
 }
