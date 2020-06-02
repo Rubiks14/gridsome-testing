@@ -10,7 +10,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/characters/**/*.md',
+        baseDir: './content/characters',
+        path: '**/*.md',
         typeName: 'Character',
         route: '/character/:name'
       }
